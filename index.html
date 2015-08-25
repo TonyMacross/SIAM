@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>.: SIAM :.</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Sistema de Gestión del Proceso de Admisión a las Maestrías en la SEPI-UPIICSA</h1>
+	</header>
+	<section id="main-container">
+		<nav>
+			<label for="">Menú Inscripción</label>
+			<ul id="menu-usr">
+				<li>Regitro</li>
+				<li>Actualización de Documentos</li>
+				<li>Carga de Documentos</li>
+			</ul>
+			-----------------------
+			<br>
+			<label for="">Menú Convocatorias</label>
+			<ul id="menu-admin">
+				<li>Alta de Convocatoria</li>
+				<li>Actualización de Convocatoria</li>
+				<li>Baja de Convocatoria</li>
+				<li>Reporte de Aspirantes Inscritos</li>
+				<li>Reporte de Aspirantes Aceptados</li>
+			</ul>
+			<label for="">Menú Documentos</label>
+			<ul id="menu-admin">
+				<li>Validacón de Documentos</li>
+				<li>Reporte de Documentos</li>
+			</ul>
+			<label for="">Menú Filtros</label>
+			<ul id="menu-admin">
+				<li>Registro de Filtros o Exámenes</li>
+				<li>Reporte de Filtros o Exámenes</li>
+			</ul>
+		</nav>
+		<div class="login">
+			Bienvenido
+			<p class="login-box">
+				<label for="">Usuario:</label>
+				<br><input type="text" id="user" placeholder="Ingresa tu Usuario">
+				<br><label for="">Contraseña:</label>
+				<br><input type="password" id="pass" placeholder="Ingresa tu Contraseña">
+				<br><a href="#" id="ingresar">Ingresa</a>
+				<br>-------------------------------
+				<br><a href="" id="registrar">Registrate</a>
+			</p>
+		</div>
+		<div id="home-convocatorias">
+			<h2>Convocatorias Disponibles</h2>
+			<article class="convocatoria">
+				<h2 class="titulo">MSC001</h2>
+				<span class="fecha">01-Agosto-2015</span>				
+				<p class="description">M. Ciencias de la Informática 2015</p>
+				<a href="#" class="ingresa">Ingresa</a>
+			</article>
+			<article class="convocatoria">
+				<h2 class="titulo">MSC002</h2>
+				<span class="fecha">01-Agosto-2016</span>				
+				<p class="description">M. Ciencias de la Informática 2015</p>
+				<a href="#" class="ingresa">Ingresa</a>
+			</article>
+			<article class="convocatoria">
+				<h2 class="titulo">Convocatoria X3</h2>
+				<span class="fecha">01-Septiembre-2015</span>				
+				<p class="description">Convocatoria para la Admisión de Maestría en Ciencias de la Informática</p>
+				<a href="#" class="ingresa">Ingresa</a>
+			</article>
+			<article class="convocatoria">
+				<h2 class="titulo">Convocatoria X4</h2>
+				<span class="fecha">01-Septiembre-2015</span>				
+				<p class="description">Convocatoria para la Admisión de Maestría en Ciencias de la Informática</p>
+				<a href="#" class="ingresa">Ingresa</a>
+			</article>
+		</div>
+		<section id="registro-aspirante" class="section_reg">
+			<h3>Registro Aspiratne</h3>
+			<label for="">Nombre:</label><input type="text" id="asp_name" placeholder="Nombre">
+			<label for="">Apellido Paterno:</label><input type="text" id="asp_apaterno" placeholder="Apellido Paterno">
+			<label for="">Apellido Materno:</label><input type="text" id="asp_amaterno" placeholder="Apellido Materno">
+			<br><label for="">Correo Electrónico:</label><input type="email" id="aps_mail" placeholder="Email">
+			<label for="">Teléfono:</label><input type="text" id="asp_telefono" placeholder="01-(55)-5555-5555">
+			<label for="">Celular:</label><input type="text" id="asp_celular" placeholder="(55)-5555-5555">
+			<br><label for="">Cedula Profesional:</label><input type="asp_cedula" id="pass" placeholder="Cedula Profesional">
+			<label for="">Promedio Superior:</label><input type="text" id="asp_prom_superior" placeholder="Ingresa tu Promedio">
+			<br><a href="#" id="ingresar">Continuar</a>
+		</section>
+		<section id="registro-convocatoria"class="section_reg">
+			<h3>Registro Convocatorias</h3>
+			<label for="">Nombre de Convocatoria:</label><input type="text" id="conv_name" placeholder="Convocatoria">
+			<br><label for="">Fecha de Apertura:</label><input type="text" id="conv_fapertura" placeholder="Apellido Paterno">
+			<br><label for="">Fecha Límite de Inscripción:</label><input type="text" id="conv_flimite" placeholder="Apellido Materno">
+			<br><label for="">Requisitos:</label><textarea name="" id="conv_reqs" cols="50" rows="10"></textarea>
+			<br><label for="">Datos de Contacto:</label><textarea name="" id="conv_contact" cols="50" rows="10"></textarea>
+			<br><label for="">Filtros y Exámenes:</label><input type="text" id="conv_tests" placeholder="Digite un número">
+			<br><label for="">Coordinador de Convocatoria:</label><input type="text" id="conv_coordinator" placeholder="(55)-5555-5555">
+			<br><a href="#" id="ingresar">Registrar Convocatoria</a>
+		</section>
+		<section id="registro-filtros"class="section_reg">
+			<h2>Registro de Filtros/Examenes de Convocatoria</h2>
+			<div>
+				<h3>Busqueda de Convocatorias</h3>
+				<label for="">ID de Convocatoria:</label><input type="text" id="name" placeholder="Ingrese el ID a buscar">
+				<br><label for="">Fecha de Apertura: Del </label>
+				<input type="date" id="conv_fapertura"> al </label><input type="date" id="conv_flimite">
+				<br><a href="#" id="ingresar">Buscar</a>
+				<br><br>
+				<h3>Resultados de Convocatorias</h3>
+				<table>
+					<tr>
+						<th>ID Convocatorias</th>
+						<th>Nombre Convocatoria</th>
+						<th>Coordinador Convocatoria</th>
+						<th>Fecha de Apertura</th>
+						<th>Fecha Límite</th>
+					</tr>
+					<tr>
+						<td><a href="#">MSC001</a></td>
+						<td>M. Ciencias de la Informática 2015</td>
+						<td>Dr. Eric Rosales Peña</td>
+						<td>01-Agosto-2015</td>
+						<td>30-Octubre-2015</td>
+					</tr>
+					<tr>
+						<td><a href="#">MSC002</a></td>
+						<td>M. Ciencias de la Informática 2016</td>
+						<td>Dr. Eric Rosales Peña</td>
+						<td>01-Agosto-2016</td>
+						<td>30-Octubre-2016</td>
+					</tr>
+					<tr>
+						<td><a href="#">MPYM001</a></td>
+						<td>M. PyMEs</td>
+						<td>Dr. Maestro en PyMEs</td>
+						<td>01-Agosto-2015</td>
+						<td>30-Septiembre-2015</td>
+					</tr>
+					<tr>
+						<td><a href="#">MAE001</a></td>
+						<td>M. Administración de Empresas</td>
+						<td>Dr. Maestro en Admon de Empresas</td>
+						<td>01-Agosto-2015</td>
+						<td>30-Noviembre-2015</td>
+					</tr>
+				</table>
+			</div>
+			<div id="registro-tests">
+				<h2>Alta de Filtros/Examenes</h2>
+				<label for="">ID de Convocatoria:</label><input type="text" id="conv_name" value="MSC001" readonly="true">
+				<br><label for="">Nombre de Convocatoria:</label><input type="text" id="conv_name" value="M. Ciencias de la Informática 2015" readonly="true" size="40" >
+				<br><label for="">Fecha de Apertura:</label><input type="text" id="conv_fapertura" value="01-Agosto-2015" readonly="true">
+				<label for="">Fecha Límite de Inscripción:</label><input type="text" id="conv_flimite" value="30-Octubre-2015" readonly="true">
+				<br><label for="">Filtros y Exámenes:</label><input type="text" id="conv_tests" value="3" readonly="true">
+				<br>
+				<table>
+					<tr>
+						<th>Nombre Filtro/Examen</th>
+						<th>Tipo</th>
+						<th>Fecha Límite Acreditación</th>
+						<th>Calificación Mínima Requerida o Estatus Esperado</th>
+					</tr>
+					<tr>
+						<td><input type="text" value="Examen Inglés"></td>
+						<td><select name="" id="tipo_test">
+							<option value="" selected="true">Examen</option>
+							<option value="" >Documento</option>
+							<option value="">Prueba</option>
+						</select></td>
+						<td><input type="text" value="30-Septiembre-2015"></td>
+						<td><input type="text" value="500"></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Curso Propedeutico"></td>
+						<td><select name="" id="tipo_test">
+							<option value="">Examen</option>
+							<option value="">Documento</option>
+							<option value="" selected="true">Prueba</option>
+						</select></td>
+						<td><input type="text" value="30-Septiembre-2015"></td>
+						<td><input type="text" value="80"></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Documentos Avalados"></td>
+						<td><select name="" id="tipo_test">
+							<option value="">Examen</option>
+							<option value="" selected="true">Documento</option>
+							<option value="">Prueba</option>
+						</select></td>
+						<td><input type="text" value="30-Septiembre-2015"></td>
+						<td><input type="text" value="Entregados"></td>
+					</tr>
+				</table>
+				<br><a href="#" id="ingresar">Guardar</a>
+				
+			</div>
+		</section>
+	</section>
+	<footer>UPIICSA - SEPI 2015</footer>
+</body>
+</html>

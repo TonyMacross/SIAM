@@ -1,0 +1,50 @@
+body {
+	max-width: 1000px;
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: gray;
+	color: lightgray;
+	font-family: Verdana;
+}
+
+#registro-aspirante, #registro-convocatoria, #registro-filtros{
+	border: 2px solid red;
+}
+
+.login{
+	padding: 1em;
+	width: 300px;
+	background-color: darkgray;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.login input{
+	margin-top: .5em;
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+
+.login a {
+	background-color: white;
+	padding: .2em;
+	border: 1px solid gold;
+	text-decoration: none;
+	border-radius: .5em;
+}
+
+.convocatoria{
+	padding: 1em;
+	width: 300px;
+	background-color: peru;
+	border-radius: .2em;
+	margin: 1em;
+	text-align: center;
+	display: inline-table;
+	-webkit-box-shadow: 0 2px 1px 1px #322E47;
+box-shadow: 0 2px 1px 1px #322E47;
+}
